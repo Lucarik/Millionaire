@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundlb"
-    tools:context=".questions.Question2">
+    tools:context=".questions.Question3">
 
     <TextView
         android:id="@+id/textView13"
@@ -18,27 +18,27 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:layout_marginBottom="443dp"
-        android:text="Which is not a Nobel prize category?"
+        android:text="Who was the 21st president of the United States?"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q2Worth" />
+        app:layout_constraintTop_toBottomOf="@+id/q3Worth" />
 
     <Button
-        android:id="@+id/q2a1B"
+        android:id="@+id/q3a1B"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="23dp"
         android:background="@drawable/roundedbutton"
-        android:text="Physics"
-        app:layout_constraintBottom_toTopOf="@+id/q2a2B"
-        app:layout_constraintEnd_toEndOf="@+id/q2a2B"
-        app:layout_constraintStart_toStartOf="@+id/q2a2B"
+        android:text="Grover Cleveland"
+        app:layout_constraintBottom_toTopOf="@+id/q3a2B"
+        app:layout_constraintEnd_toEndOf="@+id/q3a2B"
+        app:layout_constraintStart_toStartOf="@+id/q3a2B"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/q2a2B"
+        android:id="@+id/q3a2B"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="59dp"
@@ -47,26 +47,26 @@
         android:layout_marginRight="59dp"
         android:layout_marginBottom="18dp"
         android:background="@drawable/roundedbutton"
-        android:text="Chemistry"
-        app:layout_constraintBottom_toTopOf="@+id/q2a3B"
+        android:text="Chester A. Arthur"
+        app:layout_constraintBottom_toTopOf="@+id/q3a3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q2a1B" />
+        app:layout_constraintTop_toBottomOf="@+id/q3a1B" />
 
     <Button
-        android:id="@+id/q2a3B"
+        android:id="@+id/q3a3B"
         android:layout_width="285dp"
         android:layout_height="0dp"
         android:layout_marginBottom="23dp"
         android:background="@drawable/roundedbutton"
-        android:text="Literature"
-        app:layout_constraintBottom_toTopOf="@+id/q2a4B"
+        android:text="Ulysses S. Grant"
+        app:layout_constraintBottom_toTopOf="@+id/q3a4B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q2a2B" />
+        app:layout_constraintTop_toBottomOf="@+id/q3a2B" />
 
     <Button
-        android:id="@+id/q2a4B"
+        android:id="@+id/q3a4B"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="63dp"
@@ -75,14 +75,14 @@
         android:layout_marginRight="63dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/roundedbutton"
-        android:text="Mathematics"
-        app:layout_constraintBottom_toTopOf="@+id/conf2B"
+        android:text="James A. Garfield"
+        app:layout_constraintBottom_toTopOf="@+id/conf3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q2a3B" />
+        app:layout_constraintTop_toBottomOf="@+id/q3a3B" />
 
     <Button
-        android:id="@+id/conf2B"
+        android:id="@+id/conf3B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
@@ -90,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q2a4B" />
+        app:layout_constraintTop_toBottomOf="@+id/q3a4B" />
 
     <TextView
         android:id="@+id/textView"
@@ -103,12 +103,12 @@
         android:text="Question Worth: "
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="@+id/q2a1B"
+        app:layout_constraintEnd_toEndOf="@+id/q3a1B"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/q2Worth"
+        android:id="@+id/q3Worth"
         android:layout_width="117dp"
         android:layout_height="0dp"
         android:layout_marginTop="82dp"
@@ -132,12 +132,12 @@
         android:text="Total Earned: "
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/q2Total"
+        app:layout_constraintEnd_toStartOf="@+id/q3Total"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/q2Total"
+        android:id="@+id/q3Total"
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginEnd="185dp"

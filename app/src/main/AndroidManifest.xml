@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Winner"></activity>
+        <activity android:name=".questions.Question10" />
+        <activity android:name=".questions.Question9" />
+        <activity android:name=".questions.Question8" />
+        <activity android:name=".questions.Question7" />
+        <activity android:name=".questions.Question6" />
+        <activity android:name=".questions.Question5" />
+        <activity android:name=".questions.Question4" />
+        <activity android:name=".questions.Question3" />
         <activity android:name=".questions.Question2" />
         <activity android:name=".Results" />
         <activity android:name=".questions.Question1" />

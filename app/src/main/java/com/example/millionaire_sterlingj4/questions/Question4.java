@@ -1,11 +1,10 @@
 package com.example.millionaire_sterlingj4.questions;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -13,12 +12,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.millionaire_sterlingj4.R;
 import com.example.millionaire_sterlingj4.Results;
 
-public class Question1 extends AppCompatActivity {
+public class Question4 extends AppCompatActivity {
     // Saves current answer index
     int ans;
     // Initialize buttons
@@ -32,25 +29,27 @@ public class Question1 extends AppCompatActivity {
     TextView cWorth;
 
     int mTotal;
-    int mValue = 200;
+    int mValue = 1000;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question1);
+        setContentView(R.layout.activity_question4);
 
-        mTotal = 0;
+        Bundle bundle = getIntent().getExtras();
+        assert bundle != null;
+        mTotal = bundle.getInt("total_money");
 
         // Assign ViewText, buttons to respective id's
-        button1 = findViewById(R.id.q1a1B);
-        button2 = findViewById(R.id.q1a2B);
-        button3 = findViewById(R.id.q1a3B);
-        button4 = findViewById(R.id.q1a4B);
-        confirm = findViewById(R.id.conf1B);
+        button1 = findViewById(R.id.q4a1B);
+        button2 = findViewById(R.id.q4a2B);
+        button3 = findViewById(R.id.q4a3B);
+        button4 = findViewById(R.id.q4a4B);
+        confirm = findViewById(R.id.conf4B);
 
-        currentTotal = findViewById(R.id.q1Total);
-        cWorth = findViewById(R.id.q1Worth);
+        currentTotal = findViewById(R.id.q4Total);
+        cWorth = findViewById(R.id.q4Worth);
 
         currentTotal.setText("$"+ mTotal);
         cWorth.setText("$"+ mValue);
@@ -90,8 +89,8 @@ public class Question1 extends AppCompatActivity {
     }
 
     // Open next question activity
-    public void openQuestion2Page() {
-        Intent intent = new Intent(this, Question2.class);
+    public void openQuestion5Page() {
+        Intent intent = new Intent(this, Question5.class);
         intent.putExtra("total_money", mTotal);
         startActivity(intent);
     }
@@ -130,7 +129,7 @@ public class Question1 extends AppCompatActivity {
             toast = Toast.makeText(context, text, duration);
             toast.show();
             mTotal += mValue;
-            openQuestion2Page();
+            openQuestion5Page();
         } else {
             text = "Wrong answer. Try again next time.";
             toast = Toast.makeText(context, text, duration);
@@ -142,6 +141,6 @@ public class Question1 extends AppCompatActivity {
 
     // Checks if checked answer is correct
     public boolean checkAnswer() {
-        return (ans == 2);
+        return (ans == 1);
     }
 }

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Results extends AppCompatActivity {
+public class Winner extends AppCompatActivity {
 
     int mTotal;
     Button button;
@@ -22,23 +22,22 @@ public class Results extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
+        setContentView(R.layout.activity_winner);
 
         // Get correct answer number from previous activity
         Bundle bundle = getIntent().getExtras();
         assert bundle != null;
         mTotal = bundle.getInt("total_money");
 
-        button = findViewById(R.id.rStart);
-        res1 = findViewById(R.id.rRes1);
-        res2 = findViewById(R.id.rRes2);
-        total = findViewById(R.id.rTotal);
+        button = findViewById(R.id.rStart1);
+        res1 = findViewById(R.id.rWin1);
+        res2 = findViewById(R.id.rWin2);
+        total = findViewById(R.id.rTotalW);
 
         // Set correct answer text and text color
         total.setText(Integer.toString(mTotal));
-        if (mTotal < 1000000) {
-            res1.setText("A wrong answer");
-            res2.setText("Try again next time");
+        if (mTotal >= 1000000)  {
+            res2.setTextColor(Color.parseColor("#6fe890"));
         }
 
         button.setOnClickListener(new View.OnClickListener() {

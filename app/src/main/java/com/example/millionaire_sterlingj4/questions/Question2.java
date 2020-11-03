@@ -30,7 +30,7 @@ public class Question2 extends AppCompatActivity {
     TextView cWorth;
 
     int mTotal;
-    int mValue = 100;
+    int mValue = 300;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -90,8 +90,8 @@ public class Question2 extends AppCompatActivity {
     }
 
     // Open next question activity
-    public void openQuestion2Page() {
-        Intent intent = new Intent(this, Question2.class);
+    public void openQuestion3Page() {
+        Intent intent = new Intent(this, Question3.class);
         intent.putExtra("total_money", mTotal);
         startActivity(intent);
     }
@@ -130,7 +130,7 @@ public class Question2 extends AppCompatActivity {
             toast = Toast.makeText(context, text, duration);
             toast.show();
             mTotal += mValue;
-            openQuestion2Page();
+            openQuestion3Page();
         } else {
             text = "Wrong answer. Try again next time.";
             toast = Toast.makeText(context, text, duration);
@@ -142,6 +142,6 @@ public class Question2 extends AppCompatActivity {
 
     // Checks if checked answer is correct
     public boolean checkAnswer() {
-        return (ans == 2);
+        return (ans == 4);
     }
 }
