@@ -117,7 +117,7 @@
 
     <TextView
         android:id="@+id/q1Worth"
-        android:layout_width="125dp"
+        android:layout_width="150dp"
         android:layout_height="0dp"
         android:layout_marginStart="264dp"
         android:layout_marginLeft="264dp"
@@ -148,8 +148,6 @@
         android:id="@+id/q1Total"
         android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
         android:text="$0"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
