@@ -1,45 +1,36 @@
 package com.example.millionaire_sterlingj4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Results extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Lose extends AppCompatActivity {
 
     int mTotal;
     Button button;
-    TextView res1;
-    TextView res2;
     TextView total;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
+        setContentView(R.layout.activity_lose);
 
-        // Get correct answer number from previous activity
+        // Get final total from previous activity
         Bundle bundle = getIntent().getExtras();
         assert bundle != null;
         mTotal = bundle.getInt("total_money");
 
-        button = findViewById(R.id.rStart);
-        res1 = findViewById(R.id.rRes1);
-        res2 = findViewById(R.id.rRes2);
-        total = findViewById(R.id.rTotal);
+        button = findViewById(R.id.rStart2);
+        total = findViewById(R.id.rTotalL);
 
         // Set correct answer text and text color
-        total.setText(Integer.toString(mTotal));
-        if (mTotal < 1000000) {
-            res1.setText("A wrong answer");
-            res2.setText("Try again next time");
-        }
+        total.setText("$"+ mTotal);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +38,7 @@ public class Results extends AppCompatActivity {
                 openStartPage();
             }
         });
+
     }
 
     // Open next activity

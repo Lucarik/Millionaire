@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundlb"
-    tools:context=".questions.Question2">
+    tools:context=".questions.Question9">
 
     <TextView
         android:id="@+id/textView13"
@@ -18,31 +18,27 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:layout_marginBottom="443dp"
-        android:text="Who is the painter of the Mona Lisa painted in 1503?"
-        android:textSize="18sp"
+        android:text="Johann Wolfgang von Goethe's poem Erlkönig includes how many characters? "
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1Worth" />
+        app:layout_constraintTop_toBottomOf="@+id/q9Worth" />
 
     <Button
-        android:id="@+id/q1a1B"
+        android:id="@+id/q9a1B"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
         android:layout_marginBottom="23dp"
         android:background="@drawable/roundedbutton"
-        android:text="Pablo Picasso"
-        app:layout_constraintBottom_toTopOf="@+id/q1a2B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/q9a2B"
+        app:layout_constraintEnd_toEndOf="@+id/q9a2B"
+        app:layout_constraintStart_toStartOf="@+id/q9a2B"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/q1a2B"
+        android:id="@+id/q9a2B"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="59dp"
@@ -51,46 +47,42 @@
         android:layout_marginRight="59dp"
         android:layout_marginBottom="18dp"
         android:background="@drawable/roundedbutton"
-        android:text="Leonardo da Vinci"
-        app:layout_constraintBottom_toTopOf="@+id/q1a3B"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/q9a3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1a1B" />
+        app:layout_constraintTop_toBottomOf="@+id/q9a1B" />
 
     <Button
-        android:id="@+id/q1a3B"
+        android:id="@+id/q9a3B"
+        android:layout_width="480dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/roundedbutton"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/q9a4B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q9a2B" />
+
+    <Button
+        android:id="@+id/q9a4B"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginEnd="63dp"
         android:layout_marginRight="63dp"
-        android:layout_marginBottom="22dp"
-        android:background="@drawable/roundedbutton"
-        android:text="Vincent van Gogh"
-        app:layout_constraintBottom_toTopOf="@+id/q1a4B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1a2B" />
-
-    <Button
-        android:id="@+id/q1a4B"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/roundedbutton"
-        android:text="Michelangelo"
-        app:layout_constraintBottom_toTopOf="@+id/conf1B"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/conf9B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1a3B" />
+        app:layout_constraintTop_toBottomOf="@+id/q9a3B" />
 
     <Button
-        android:id="@+id/conf1B"
+        android:id="@+id/conf9B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
@@ -98,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1a4B" />
+        app:layout_constraintTop_toBottomOf="@+id/q9a4B" />
 
     <TextView
         android:id="@+id/textView"
@@ -111,12 +103,12 @@
         android:text="Question Worth: "
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="@+id/q1a1B"
+        app:layout_constraintEnd_toEndOf="@+id/q9a1B"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/q1Worth"
+        android:id="@+id/q9Worth"
         android:layout_width="150dp"
         android:layout_height="0dp"
         android:layout_marginStart="264dp"
@@ -126,7 +118,7 @@
         android:text="$0"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -140,14 +132,14 @@
         android:text="Total Earned: "
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/q1Total"
+        app:layout_constraintEnd_toStartOf="@+id/q9Total"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/q1Total"
+        android:id="@+id/q9Total"
         android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_height="37dp"
         android:text="$0"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView3"

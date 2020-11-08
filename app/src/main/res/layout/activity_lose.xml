@@ -5,41 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundb"
-    tools:context=".Winner">
+    tools:context=".Lose">
 
     <TextView
-        android:id="@+id/rWin1"
+        android:id="@+id/rLose1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="86dp"
         android:layout_marginStart="22dp"
         android:layout_marginLeft="22dp"
         android:layout_marginEnd="22dp"
         android:layout_marginRight="22dp"
-        android:layout_marginBottom="334dp"
+        android:layout_marginBottom="119dp"
         android:gravity="center"
-        android:text="Congrats! You are a"
+        android:text="Wrong Answer"
+        android:textColor="#9e4a23"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/rStart1"
+        app:layout_constraintBottom_toBottomOf="@+id/rLose2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rTotalW" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/rWin2"
+        android:id="@+id/rLose2"
         android:layout_width="0dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginLeft="58dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginRight="58dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="212dp"
         android:gravity="center"
-        android:text="Millionaire!"
-        android:textColor="#6fe890"
+        android:text="Try again next time"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/rStart2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rWin1" />
+        app:layout_constraintTop_toBottomOf="@+id/rTotalL" />
 
     <TextView
         android:id="@+id/textView5"
@@ -49,34 +49,30 @@
         android:layout_marginLeft="36dp"
         android:text="Total Earned:"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/rTotalW"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rTotalL"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/rTotalW"
-        android:layout_width="186dp"
+        android:id="@+id/rTotalL"
+        android:layout_width="185dp"
         android:layout_height="0dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginBottom="146dp"
         android:text="$0"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/rWin1"
+        app:layout_constraintBottom_toTopOf="@+id/rLose2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rStart1"
-        android:layout_width="0dp"
+        android:id="@+id/rStart2"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
         android:text="Return to Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rWin1" />
+        app:layout_constraintTop_toBottomOf="@+id/rLose2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

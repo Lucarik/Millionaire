@@ -1,7 +1,5 @@
 package com.example.millionaire_sterlingj4.questions;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +10,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.millionaire_sterlingj4.Lose;
 import com.example.millionaire_sterlingj4.R;
-import com.example.millionaire_sterlingj4.Results;
 import com.example.millionaire_sterlingj4.Winner;
 
 public class Question10 extends AppCompatActivity {
@@ -89,14 +89,14 @@ public class Question10 extends AppCompatActivity {
 
     }
 
-    public void openWinPage() {
-        Intent intent = new Intent(this, Winner.class);
+    public void openResultsPage() {
+        Intent intent = new Intent(this, Lose.class);
         intent.putExtra("total_money", mTotal);
         startActivity(intent);
     }
 
-    public void openResultsPage() {
-        Intent intent = new Intent(this, Results.class);
+    public void openWinPage() {
+        Intent intent = new Intent(this, Winner.class);
         intent.putExtra("total_money", mTotal);
         startActivity(intent);
     }
@@ -125,7 +125,7 @@ public class Question10 extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast toast;
         if (checkAnswer()) {
-            text = "Correct Answer. You earned " + mValue;
+            text = "Correct Answer. You earned $" + mValue;
             toast = Toast.makeText(context, text, duration);
             toast.show();
             mTotal += mValue;
@@ -136,6 +136,7 @@ public class Question10 extends AppCompatActivity {
             toast.show();
             openResultsPage();
         }
+
 
     }
 

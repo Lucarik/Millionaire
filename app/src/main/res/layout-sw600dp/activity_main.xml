@@ -9,13 +9,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="389dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginBottom="53dp"
+        android:layout_width="551dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="97dp"
         android:gravity="center_horizontal"
         android:text="Who Wants to be a Millionaire!"
-        android:textSize="36sp"
+        android:textSize="55sp"
         app:layout_constraintBottom_toTopOf="@+id/beginB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,31 +27,30 @@
 
     <Button
         android:id="@+id/beginB"
-        android:layout_width="263dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="2dp"
+        android:layout_width="239dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="342dp"
         android:text="Begin Game"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/ibutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/ibutton"
-        android:layout_width="246dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="543dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="80dp"
         android:background="@null"
         android:text="View Instructions"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beginB"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.507"
         tools:text="View Instructions" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

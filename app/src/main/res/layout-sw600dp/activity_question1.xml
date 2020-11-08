@@ -19,7 +19,7 @@
         android:layout_marginRight="35dp"
         android:layout_marginBottom="443dp"
         android:text="Who is the painter of the Mona Lisa painted in 1503?"
-        android:textSize="18sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
