@@ -1,4 +1,75 @@
 <resources>
     <string name="app_name">Millionaire_Sterlingj4</string>
     <string name="instructions">Instructions</string>
+    <string name="_1_there_will_be_ten_questions_in_total_to_answer">1. There will be ten questions in total to answer</string>
+    <string name="_2_after_choosing_an_answer_hit_confirm">2. After choosing an answer hit confirm</string>
+    <string name="_3_if_you_get_a_question_wrong_the_game_ends">3. If you get a question wrong, the game ends</string>
+    <string name="_4_after_getting_all_the_questions_right_you_win">4. After getting all the questions right you win</string>
+    <string name="return1">Return</string>
+    <string name="return_to_start">Return to Start</string>
+    <string name="wrong_answer">Wrong Answer</string>
+    <string name="try_again_next_time">Try again next time</string>
+    <string name="total_earned">Total Earned:</string>
+    <string name="_0">$0</string>
+    <string name="who_wants_to_be_a_millionaire">Who Wants to be a Millionaire!</string>
+    <string name="begin_game">Begin Game</string>
+    <string name="view_instructions">View Instructions</string>
+    <string name="who_is_the_painter_of_the_mona_lisa_painted_in_1503">Who is the painter of the Mona Lisa painted in 1503?</string>
+    <string name="pablo_picasso">Pablo Picasso</string>
+    <string name="leonardo_da_vinci">Leonardo da Vinci</string>
+    <string name="vincent_van_gogh">Vincent van Gogh</string>
+    <string name="michelangelo">Michelangelo</string>
+    <string name="confirm">Confirm</string>
+    <string name="question_worth">Question Worth:</string>
+    <string name="_21_976_amu">21.976 amu</string>
+    <string name="_23_581_amu">23.581 amu</string>
+    <string name="what_is_the_atomic_mass_of_aluminum">What is the atomic mass of Aluminum</string>
+    <string name="_26_982_amu">26.982 amu</string>
+    <string name="_20_240_amu">20.240 amu</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="physics">Physics</string>
+    <string name="which_is_not_a_nobel_prize_category">Which is not a Nobel prize category?</string>
+    <string name="literature">Literature</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="chester_a_arthur">Chester A. Arthur</string>
+    <string name="grover_cleveland">Grover Cleveland</string>
+    <string name="who_was_the_21st_president_of_the_united_states">Who was the 21st president of the United States?</string>
+    <string name="ulysses_s_grant">Ulysses S. Grant</string>
+    <string name="james_a_garfield">James A. Garfield</string>
+    <string name="_5">5</string>
+    <string name="_2">2</string>
+    <string name="what_is_the_seventh_digit_of_pi">What is the seventh digit of pi (π)?</string>
+    <string name="_9">9</string>
+    <string name="_7">7</string>
+    <string name="_1908">1908</string>
+    <string name="_1932">1932</string>
+    <string name="in_which_year_was_the_walt_disney_company_founded">In which year was the Walt Disney Company founded?</string>
+    <string name="_1923">1923</string>
+    <string name="_1945">1945</string>
+    <string name="rosalind_franklin">Rosalind Franklin</string>
+    <string name="francis_crick">Francis Crick</string>
+    <string name="who_is_credited_with_the_discovery_of_penecillin">Who is credited with the discovery of penecillin?</string>
+    <string name="alexander_fleming">Alexander Fleming</string>
+    <string name="rachel_carson">Rachel Carson</string>
+    <string name="mauritius">Mauritius</string>
+    <string name="vero_azul">Vero Azul</string>
+    <string name="burkina_faso">Burkina Faso</string>
+    <string name="which_is_not_a_country_in_africa">Which is not a country in Africa?</string>
+    <string name="cabo_verde">Cabo Verde</string>
+    <string name="which_is_not_involved_in_the_manufacturing_of_cement">Which is not involved in the manufacturing of cement?</string>
+    <string name="silica_sand">Silica Sand</string>
+    <string name="copper_ore">Copper Ore</string>
+    <string name="limestone">Limestone</string>
+    <string name="shells">Shells</string>
+    <string name="johann_wolfgang_von_goethe_s_poem_erlk_nig_includes_how_many_characters">Johann Wolfgang von Goethe\'s poem Erlkönig includes how many characters?</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="congrats_you_are_a">Congrats! You are a</string>
+    <string name="millionaire">Millionaire!</string>
+
+
+
+
+
 </resources>
